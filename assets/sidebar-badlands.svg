@@ -1,17 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 900" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#13201e"/>
-      <stop offset=".55" stop-color="#0c1110"/>
+      <stop offset="0" stop-color="#1e2b29"/>
+      <stop offset=".55" stop-color="#151b18"/>
       <stop offset="1" stop-color="#050606"/>
     </linearGradient>
+    <radialGradient id="sun" cx=".68" cy=".42" r=".24">
+      <stop offset="0" stop-color="#c9ad77" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#c9ad77" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <rect width="360" height="900" fill="url(#g)"/>
-  <path d="M0 585c28-25 54-56 103-54 42 2 63 33 95 16 36-20 57-87 94-81 28 5 45 47 68 62v372H0z" fill="#18231f"/>
-  <path d="M0 642c68-41 100-29 138-45 54-23 73-66 118-54 48 13 62 67 104 79v278H0z" fill="#0d1211"/>
-  <path d="M0 710c56-18 96-12 145-24 69-17 105-49 163-31 21 6 38 18 52 29v216H0z" fill="#080b0b"/>
-  <g opacity=".24" stroke="#8f7a52" stroke-width="1">
+  <rect width="360" height="900" fill="url(#sun)"/>
+  <path d="M0 520c28-25 54-56 103-54 42 2 63 33 95 16 36-20 57-87 94-81 28 5 45 47 68 62v437H0z" fill="#334239" opacity=".72"/>
+  <path d="M0 588c68-41 100-29 138-45 54-23 73-66 118-54 48 13 62 67 104 79v332H0z" fill="#202925" opacity=".86"/>
+  <path d="M0 686c56-18 96-12 145-24 69-17 105-49 163-31 21 6 38 18 52 29v240H0z" fill="#0b1010"/>
+  <g opacity=".42" stroke="#b69c70" stroke-width="1.2">
     <path d="M38 676h92M94 611h74M214 648h90M232 582h58"/>
   </g>
-  <rect width="360" height="900" fill="#000" opacity=".35"/>
+  <rect width="360" height="900" fill="#000" opacity=".16"/>
 </svg>
