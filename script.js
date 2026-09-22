@@ -15,7 +15,7 @@ function drawProductionChart() {
   const chartH = height - pad * 1.35;
 
   ctx.clearRect(0, 0, width, height);
-  ctx.strokeStyle = "rgba(182, 156, 112, 0.11)";
+  ctx.strokeStyle = "rgba(216, 221, 224, 0.11)";
   ctx.lineWidth = 1;
 
   for (let i = 0; i <= 4; i += 1) {
@@ -48,7 +48,7 @@ function drawProductionChart() {
     if (i === 0) ctx.moveTo(x, y);
     else ctx.lineTo(x, y);
   });
-  ctx.strokeStyle = "#c9ad77";
+  ctx.strokeStyle = "#d8dde0";
   ctx.lineWidth = 2;
   ctx.stroke();
 
@@ -56,8 +56,8 @@ function drawProductionChart() {
   ctx.lineTo(pad, height - pad);
   ctx.closePath();
   const fill = ctx.createLinearGradient(0, 12, 0, height - pad);
-  fill.addColorStop(0, "rgba(201, 173, 119, 0.22)");
-  fill.addColorStop(1, "rgba(201, 173, 119, 0)");
+  fill.addColorStop(0, "rgba(216, 221, 224, 0.2)");
+  fill.addColorStop(1, "rgba(216, 221, 224, 0)");
   ctx.fillStyle = fill;
   ctx.fill();
 

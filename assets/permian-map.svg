@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="sand" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7f6b4d"/>
-      <stop offset=".42" stop-color="#b99767"/>
-      <stop offset="1" stop-color="#4d4235"/>
+      <stop offset="0" stop-color="#4e5b5d"/>
+      <stop offset=".42" stop-color="#8f989a"/>
+      <stop offset="1" stop-color="#252c2d"/>
     </linearGradient>
     <filter id="noise">
       <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2"/>
@@ -28,7 +28,7 @@
     <circle cx="271" cy="233" r="2"/>
     <circle cx="426" cy="125" r="2"/>
   </g>
-  <circle cx="258" cy="146" r="8" fill="#e7c078"/>
-  <circle cx="258" cy="146" r="22" fill="#e7c078" opacity=".18"/>
-  <path d="M320 198h70l21 22v45l-27 11-31-18-36 8-24-28z" fill="#171c19" opacity=".55" stroke="#c9ad77" stroke-width="2"/>
+  <circle cx="258" cy="146" r="8" fill="#d8dde0"/>
+  <circle cx="258" cy="146" r="22" fill="#d8dde0" opacity=".18"/>
+  <path d="M320 198h70l21 22v45l-27 11-31-18-36 8-24-28z" fill="#171c19" opacity=".55" stroke="#d8dde0" stroke-width="2"/>
 </svg>

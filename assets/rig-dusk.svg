@@ -3,12 +3,12 @@
     <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
       <stop offset="0" stop-color="#26323c"/>
       <stop offset="0.42" stop-color="#3b3f47"/>
-      <stop offset="0.67" stop-color="#a65f39"/>
+      <stop offset="0.67" stop-color="#283133"/>
       <stop offset="1" stop-color="#151817"/>
     </linearGradient>
     <radialGradient id="flare" cx="0.53" cy="0.6" r="0.45">
-      <stop offset="0" stop-color="#d8b66f" stop-opacity="0.55"/>
-      <stop offset="0.36" stop-color="#b8783d" stop-opacity="0.14"/>
+      <stop offset="0" stop-color="#d8dde0" stop-opacity="0.32"/>
+      <stop offset="0.36" stop-color="#9ca6aa" stop-opacity="0.12"/>
       <stop offset="1" stop-color="#000" stop-opacity="0"/>
     </radialGradient>
     <filter id="glow">
@@ -47,14 +47,14 @@
     <rect x="155" y="511" width="110" height="24"/>
   </g>
   <g filter="url(#glow)">
-    <circle cx="505" cy="180" r="5" fill="#f1d886"/>
-    <circle cx="470" cy="340" r="5" fill="#f1d886"/>
-    <circle cx="552" cy="357" r="5" fill="#f1d886"/>
-    <circle cx="411" cy="506" r="7" fill="#f1d886"/>
-    <circle cx="598" cy="506" r="7" fill="#f1d886"/>
-    <circle cx="742" cy="503" r="6" fill="#f1d886"/>
-    <circle cx="850" cy="492" r="5" fill="#f1d886"/>
-    <circle cx="205" cy="510" r="5" fill="#f1d886"/>
+    <circle cx="505" cy="180" r="5" fill="#d8dde0"/>
+    <circle cx="470" cy="340" r="5" fill="#d8dde0"/>
+    <circle cx="552" cy="357" r="5" fill="#d8dde0"/>
+    <circle cx="411" cy="506" r="7" fill="#d8dde0"/>
+    <circle cx="598" cy="506" r="7" fill="#d8dde0"/>
+    <circle cx="742" cy="503" r="6" fill="#d8dde0"/>
+    <circle cx="850" cy="492" r="5" fill="#d8dde0"/>
+    <circle cx="205" cy="510" r="5" fill="#d8dde0"/>
   </g>
   <g opacity=".45" stroke="#1d2623" stroke-width="3">
     <path d="M0 529h1100"/>

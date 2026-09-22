@@ -3,13 +3,11 @@
   --bg-soft: #0a0f0f;
   --panel: rgba(10, 15, 15, 0.94);
   --panel-2: #0d1414;
-  --line: rgba(182, 156, 112, 0.22);
-  --line-strong: rgba(210, 183, 135, 0.38);
+  --line: rgba(216, 221, 224, 0.18);
+  --line-strong: rgba(216, 221, 224, 0.34);
   --text: #e8e1d4;
   --muted: #7f8783;
   --dim: #5f6865;
-  --gold: #c9ad77;
-  --gold-soft: #806b46;
   --titanium: #d8dde0;
   --titanium-soft: #9ca6aa;
   --green: #6ed486;
@@ -196,7 +194,7 @@ a {
 
 .top-tabs a.active,
 .top-tabs a:hover {
-  border-bottom-color: var(--gold);
+  border-bottom-color: var(--titanium);
   color: var(--text);
 }
 
@@ -296,7 +294,7 @@ a {
 .reserve-bar i {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, var(--gold), #e6d3a9);
+  background: linear-gradient(90deg, var(--titanium-soft), var(--titanium));
 }
 
 .status-card strong {
@@ -407,7 +405,7 @@ h1 {
   grid-template-columns: 1fr auto;
   gap: 18px;
   min-height: 23px;
-  border-bottom: 1px solid rgba(182, 156, 112, 0.12);
+  border-bottom: 1px solid rgba(216, 221, 224, 0.12);
   align-items: center;
 }
 
@@ -454,7 +452,7 @@ dd {
   margin-top: 8px;
   border: 1px solid var(--line-strong);
   background: rgba(255, 255, 255, 0.02);
-  color: #bbb4a8;
+  color: #d4d9d8;
   text-transform: uppercase;
   font-size: 8px;
   font-weight: 900;
@@ -464,8 +462,8 @@ dd {
 .right-rail button:hover,
 .panel-head button:hover,
 .map-card button:hover {
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: var(--titanium);
+  color: #ffffff;
 }
 
 .timeline ol {
@@ -562,7 +560,7 @@ dd {
   width: 82px;
   height: 82px;
   border-radius: 50%;
-  background: conic-gradient(var(--gold) 0 82%, #8d9a9b 82% 94%, #394141 94% 100%);
+  background: conic-gradient(var(--titanium) 0 82%, #8d9a9b 82% 94%, #394141 94% 100%);
   position: relative;
 }
 
@@ -599,7 +597,7 @@ dd {
 }
 
 .sand {
-  background: var(--gold);
+  background: var(--titanium);
 }
 
 .steel {
@@ -620,9 +618,9 @@ dd {
 .map-image {
   min-height: 155px;
   background:
-    radial-gradient(circle at 55% 52%, rgba(255, 200, 111, 0.9) 0 3px, transparent 4px),
+    radial-gradient(circle at 55% 52%, rgba(216, 221, 224, 0.95) 0 3px, transparent 4px),
     url("./assets/permian-map.svg") center / cover;
-  filter: sepia(0.15) saturate(0.95) brightness(0.82);
+  filter: grayscale(0.65) saturate(0.45) brightness(0.84);
 }
 
 .map-info {
@@ -682,11 +680,11 @@ th {
 
 td {
   padding: 8px 10px;
-  border-bottom: 1px solid rgba(182, 156, 112, 0.1);
+  border-bottom: 1px solid rgba(216, 221, 224, 0.1);
 }
 
 tr.selected {
-  background: rgba(201, 173, 119, 0.08);
+  background: rgba(216, 221, 224, 0.08);
 }
 
 .activity {
