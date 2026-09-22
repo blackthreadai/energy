@@ -525,8 +525,10 @@ dd {
   min-height: 155px;
   background:
     radial-gradient(circle at 55% 52%, rgba(216, 221, 224, 0.95) 0 3px, transparent 4px),
-    url("./assets/permian-map.svg") center / cover;
-  filter: grayscale(0.65) saturate(0.45) brightness(0.84);
+    radial-gradient(circle at 55% 52%, rgba(216, 221, 224, 0.28) 0 10px, transparent 11px),
+    linear-gradient(180deg, rgba(5, 8, 8, 0.12), rgba(5, 8, 8, 0.36)),
+    url("./assets/location-terrain.jpg") center / cover;
+  filter: saturate(0.55) contrast(1.16) brightness(0.76);
 }
 
 .map-info {
