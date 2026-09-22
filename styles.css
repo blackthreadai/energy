@@ -57,10 +57,9 @@ a {
   height: 100vh;
   border-right: 1px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(5, 8, 8, 0.76) 0%, rgba(5, 8, 8, 0.52) 42%, rgba(5, 7, 7, 0.84) 100%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.12) 48%, rgba(0, 0, 0, 0.58)),
-    url("./assets/sidebar-pumpjack.jpg") 43% center / cover;
-  background-blend-mode: normal, multiply, normal;
+    linear-gradient(180deg, rgba(13, 20, 20, 0.96) 0%, rgba(5, 8, 8, 0.98) 52%, rgba(2, 4, 4, 1) 100%),
+    linear-gradient(90deg, rgba(216, 221, 224, 0.08), transparent 42%, rgba(0, 0, 0, 0.5)),
+    var(--bg);
 }
 
 .brand-mark {
@@ -131,8 +130,8 @@ a {
   padding: 0 14px 30px;
   border-top: 0;
   background:
-    linear-gradient(180deg, rgba(2, 4, 4, 0), rgba(2, 4, 4, 0.52)),
-    rgba(4, 7, 7, 0.08);
+    linear-gradient(180deg, rgba(2, 4, 4, 0), rgba(216, 221, 224, 0.06)),
+    rgba(4, 7, 7, 0.18);
   text-transform: uppercase;
 }
 
