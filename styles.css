@@ -65,30 +65,35 @@ a {
 .brand-mark {
   display: flex;
   align-items: center;
+  gap: 10px;
   height: 70px;
   padding: 0 14px;
   border-bottom: 1px solid var(--line);
   text-transform: uppercase;
 }
 
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--titanium);
+  color: #f0eadf;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0;
+  box-shadow: inset 0 0 0 1px rgba(216, 221, 224, 0.12);
+}
+
 .brand-mark strong {
   display: block;
   color: #f0eadf;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 900;
   line-height: 1;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9);
-}
-
-.brand-mark small {
-  display: block;
-  margin-top: 5px;
-  color: #c3cac7;
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.3em;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
 }
 
 .side-nav {
@@ -675,7 +680,7 @@ tr.selected {
 
 .activity ul {
   display: grid;
-  gap: 6px;
+  gap: 4px;
   margin: 12px 0 0;
   padding: 0;
   list-style: none;
@@ -686,13 +691,13 @@ tr.selected {
   display: grid;
   grid-template-columns: 34px 1fr;
   gap: 8px;
-  min-height: 30px;
+  min-height: 23px;
   align-items: center;
-  padding: 0 8px 0 12px;
+  padding: 0 8px 0 10px;
   border-left: 3px solid rgba(216, 221, 224, 0.36);
   background: rgba(216, 221, 224, 0.045);
   color: #b7bcb8;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .activity li:nth-child(even) {
