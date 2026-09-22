@@ -537,9 +537,9 @@ dd {
   position: relative;
   min-height: 155px;
   background:
-    linear-gradient(180deg, rgba(5, 8, 8, 0.22), rgba(5, 8, 8, 0.42)),
+    linear-gradient(180deg, rgba(5, 8, 8, 0.42), rgba(5, 8, 8, 0.66)),
     url("./assets/location-terrain.jpg") center / cover;
-  filter: saturate(0.62) contrast(1.16) brightness(0.72);
+  filter: saturate(0.48) contrast(1.2) brightness(0.52);
 }
 
 .map-image::before,
