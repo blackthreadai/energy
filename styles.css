@@ -162,12 +162,12 @@ a {
   display: flex;
   align-items: center;
   margin: 0 0 0 18px;
-  color: #f0eadf;
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: 900;
-  letter-spacing: 0.18em;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9);
+  color: #dfe5e4;
+  font-family: Corbel, "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.72);
 }
 
 .wallet {
@@ -724,8 +724,8 @@ tr.selected {
 
   .topline {
     margin-left: 20px;
-    font-size: 10px;
-    letter-spacing: 0.14em;
+    font-size: 13px;
+    letter-spacing: 0.02em;
   }
 
   .content-grid {
