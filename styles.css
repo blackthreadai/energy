@@ -172,41 +172,26 @@ a {
   background: rgba(7, 12, 12, 0.94);
 }
 
-.top-tabs {
+.topline {
   display: flex;
-  align-items: stretch;
-  margin-left: 105px;
-}
-
-.top-tabs a {
-  display: grid;
-  place-items: center;
-  min-width: 98px;
-  padding: 0 18px;
-  border-bottom: 1px solid transparent;
-  color: var(--muted);
-  text-decoration: none;
+  align-items: center;
+  margin: 0 0 0 105px;
+  color: #f0f3f2;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 900;
-  letter-spacing: 0.15em;
-}
-
-.top-tabs a.active,
-.top-tabs a:hover {
-  border-bottom-color: var(--titanium);
-  color: var(--text);
+  letter-spacing: 0.28em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.8);
 }
 
 .wallet {
-  display: grid;
-  grid-template-columns: auto 34px;
-  align-content: center;
+  display: flex;
   align-items: center;
   gap: 10px;
   padding-right: 24px;
 }
 
+.fuel-balance,
 .wallet button {
   height: 30px;
   padding: 0 12px;
@@ -214,7 +199,14 @@ a {
   background: rgba(255, 255, 255, 0.03);
   color: var(--text);
   font-size: 10px;
+  font-weight: 900;
   letter-spacing: 0.12em;
+}
+
+.fuel-balance {
+  display: grid;
+  place-items: center;
+  color: #f4f7f6;
 }
 
 .wallet .avatar {
@@ -226,16 +218,6 @@ a {
   background: #202625;
   color: #67706d;
   font-size: 10px;
-}
-
-.wallet small {
-  grid-column: 1 / -1;
-  justify-self: end;
-  color: var(--muted);
-  text-transform: uppercase;
-  font-size: 8px;
-  font-weight: 900;
-  letter-spacing: 0.24em;
 }
 
 .ticker-grid {
@@ -742,7 +724,7 @@ tr.selected {
     font-size: 0;
   }
 
-  .top-tabs {
+  .topline {
     margin-left: 0;
   }
 
