@@ -258,6 +258,10 @@ a {
   background: linear-gradient(90deg, var(--titanium-soft), var(--titanium));
 }
 
+.mini-bar.danger i {
+  background: var(--red);
+}
+
 .status-card strong {
   color: var(--red);
   text-transform: uppercase;
