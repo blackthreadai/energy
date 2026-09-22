@@ -138,29 +138,25 @@ a {
 
 .sidebar-art {
   margin-top: auto;
-  min-height: 250px;
-  padding: 24px 18px;
-  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: flex-end;
+  min-height: 315px;
+  padding: 0 14px 30px;
+  border-top: 0;
   background:
-    linear-gradient(180deg, rgba(2, 4, 4, 0.06), rgba(2, 4, 4, 0.5)),
-    rgba(4, 7, 7, 0.2);
+    linear-gradient(180deg, rgba(2, 4, 4, 0), rgba(2, 4, 4, 0.52)),
+    rgba(4, 7, 7, 0.08);
   text-transform: uppercase;
 }
 
 .sidebar-art p {
-  margin: 0 0 46px;
-  color: #ced3cc;
-  font-size: 10px;
+  margin: 0;
+  color: #f0eadf;
+  font-size: 17px;
   font-weight: 900;
-  line-height: 1.45;
-  letter-spacing: 0.25em;
-}
-
-.sidebar-art strong {
-  color: var(--gold);
-  font-family: Georgia, serif;
-  font-size: 10px;
-  letter-spacing: 0.22em;
+  line-height: 1.18;
+  letter-spacing: 0.18em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9);
 }
 
 .workspace {
