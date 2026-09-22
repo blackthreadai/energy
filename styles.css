@@ -194,7 +194,11 @@ a {
 .fuel-balance {
   display: grid;
   place-items: center;
-  color: #f4f7f6;
+  border-color: rgba(110, 212, 134, 0.45);
+  background: rgba(110, 212, 134, 0.12);
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
 }
 
 .wallet .avatar {
