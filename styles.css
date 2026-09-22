@@ -166,7 +166,7 @@ a {
   font-family: Corbel, "Avenir Next", "Segoe UI", sans-serif;
   font-size: 22px;
   font-weight: 300;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.72);
 }
 
@@ -674,18 +674,30 @@ tr.selected {
 }
 
 .activity ul {
+  display: grid;
+  gap: 6px;
   margin: 12px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .activity li {
+  position: relative;
   display: grid;
   grid-template-columns: 34px 1fr;
   gap: 8px;
-  min-height: 26px;
+  min-height: 30px;
+  align-items: center;
+  padding: 0 8px 0 12px;
+  border-left: 3px solid rgba(216, 221, 224, 0.36);
+  background: rgba(216, 221, 224, 0.045);
   color: #b7bcb8;
   font-size: 10px;
+}
+
+.activity li:nth-child(even) {
+  border-left-color: rgba(110, 212, 134, 0.72);
+  background: rgba(110, 212, 134, 0.12);
 }
 
 .activity time {
