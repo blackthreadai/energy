@@ -301,6 +301,7 @@ a {
 .content-grid {
   display: grid;
   grid-template-columns: minmax(450px, 1.45fr) 185px 185px 300px;
+  grid-template-rows: auto 155px auto;
   gap: 8px;
   padding: 14px;
 }
@@ -323,7 +324,8 @@ a {
 }
 
 .asset-card {
-  grid-column: span 3;
+  grid-column: 1 / 4;
+  grid-row: 1;
 }
 
 .asset-head {
@@ -429,6 +431,8 @@ dd {
 }
 
 .right-rail {
+  grid-column: 4;
+  grid-row: 1;
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 8px;
@@ -505,8 +509,11 @@ dd {
 }
 
 .chart-panel {
-  min-height: 155px;
+  grid-column: 1;
+  grid-row: 2;
+  height: 155px;
   padding: 12px;
+  overflow: hidden;
 }
 
 .panel-head {
@@ -531,15 +538,17 @@ dd {
 
 .map-card {
   display: grid;
-  grid-column: span 2;
+  grid-column: 2 / 4;
+  grid-row: 2;
   grid-template-columns: 1.15fr 0.85fr;
+  height: 155px;
   padding: 0;
   overflow: hidden;
 }
 
 .map-image {
   position: relative;
-  min-height: 155px;
+  min-height: 0;
   overflow: hidden;
   background: #050808;
 }
@@ -636,7 +645,8 @@ dd {
 }
 
 .portfolio {
-  grid-column: span 3;
+  grid-column: 1 / 4;
+  grid-row: 3;
   padding: 12px;
 }
 
@@ -675,7 +685,11 @@ tr.selected {
 }
 
 .activity {
+  grid-column: 4;
+  grid-row: 2;
+  height: 155px;
   padding: 12px;
+  overflow: hidden;
 }
 
 .activity ul {
@@ -684,6 +698,10 @@ tr.selected {
   margin: 12px 0 0;
   padding: 0;
   list-style: none;
+  max-height: 108px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 4px;
 }
 
 .activity li {
