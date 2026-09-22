@@ -534,13 +534,54 @@ dd {
 }
 
 .map-image {
+  position: relative;
   min-height: 155px;
   background:
-    radial-gradient(circle at 55% 52%, rgba(216, 221, 224, 0.95) 0 3px, transparent 4px),
-    radial-gradient(circle at 55% 52%, rgba(216, 221, 224, 0.22) 0 10px, transparent 11px),
     linear-gradient(180deg, rgba(5, 8, 8, 0.22), rgba(5, 8, 8, 0.42)),
     url("./assets/location-terrain.jpg") center / cover;
   filter: saturate(0.62) contrast(1.16) brightness(0.72);
+}
+
+.map-image::before,
+.map-image::after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  top: 52%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map-image::before {
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(199, 104, 96, 0.55);
+  background: rgba(199, 104, 96, 0.18);
+  animation: map-marker-pulse 2s ease-out infinite;
+}
+
+.map-image::after {
+  width: 7px;
+  height: 7px;
+  background: var(--red);
+  box-shadow: 0 0 14px rgba(199, 104, 96, 0.72);
+}
+
+@keyframes map-marker-pulse {
+  0% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(0.72);
+  }
+
+  70% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.8);
+  }
 }
 
 .map-info {
