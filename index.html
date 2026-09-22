@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Energy Department Terminal</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="terminal-shell">
+      <aside class="sidebar">
+        <div class="brand-mark">
+          <span class="brand-icon">ED</span>
+          <div>
+            <strong>Energy</strong>
+            <small>Department</small>
+          </div>
+        </div>
+
+        <nav class="side-nav" aria-label="Game terminal navigation">
+          <a class="active" href="#"><span>▣</span>Overview</a>
+          <a href="#"><span>◆</span>My Assets</a>
+          <a href="#"><span>⌂</span>Drilling</a>
+          <a href="#"><span>▲</span>Refining</a>
+          <a href="#"><span>▾</span>Marketplace</a>
+          <a href="#"><span>●</span>Maps & Data</a>
+          <a href="#"><span>▥</span>Leaderboard</a>
+          <a href="#"><span>▤</span>Protocol</a>
+          <a href="#"><span>◧</span>Docs</a>
+        </nav>
+
+        <div class="sidebar-art">
+          <p>Same land.<br />Different horizons.</p>
+          <strong>Wildcatter<br />Est. 2025</strong>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <nav class="top-tabs" aria-label="Primary tabs">
+            <a class="active" href="#">Dashboard</a>
+            <a href="#">Assets</a>
+            <a href="#">Drill</a>
+            <a href="#">Refine</a>
+            <a href="#">Markets</a>
+            <a href="#">Intelligence</a>
+          </nav>
+
+          <div class="wallet">
+            <button>0x3A7F...9B2C</button>
+            <span class="avatar">●</span>
+            <small>Energy builds empires.</small>
+          </div>
+        </header>
+
+        <section class="ticker-grid" aria-label="Market snapshot">
+          <article>
+            <span>$FUEL Price</span>
+            <strong>$0.78</strong>
+            <em>+4.6%</em>
+          </article>
+          <article>
+            <span>24h Volume</span>
+            <strong>$2,840,112</strong>
+          </article>
+          <article>
+            <span>Total Supply</span>
+            <strong>412,630,000</strong>
+          </article>
+          <article>
+            <span>Daily Production</span>
+            <strong>1,842,300</strong>
+            <em>+2.1%</em>
+          </article>
+          <article>
+            <span>Daily Consumption</span>
+            <strong>1,913,880</strong>
+            <em>+5.3%</em>
+          </article>
+          <article>
+            <span>Global Refining Utilization</span>
+            <strong>87%</strong>
+            <div class="mini-bar"><i style="width:87%"></i></div>
+          </article>
+          <article class="status-card">
+            <span>Network Status</span>
+            <strong>Contraction</strong>
+            <small>Refinery capacity -4% in 2d</small>
+          </article>
+        </section>
+
+        <div class="content-grid">
+          <section class="asset-card panel">
+            <div class="asset-head">
+              <div>
+                <h1>Midnight State #14</h1>
+                <p>Permian Basin <span>32.3471° N, 103.6152° W</span></p>
+              </div>
+              <span class="badge">Producing</span>
+            </div>
+
+            <div class="asset-body">
+              <div class="rig-photo" role="img" aria-label="Oil drilling rig at dusk"></div>
+              <dl class="spec-list">
+                <div><dt>Resource Type</dt><dd>Light Crude</dd></div>
+                <div><dt>Status</dt><dd>Producing</dd></div>
+                <div><dt>Proven Reserve</dt><dd>482,700 BOE</dd></div>
+                <div><dt>Remaining Reserve</dt><dd>391,228 BOE (81%)</dd></div>
+                <div><dt>Current Production</dt><dd>318 BOE/day</dd></div>
+                <div><dt>Decline Rate</dt><dd>7.2% / year</dd></div>
+                <div><dt>Development Cost</dt><dd>42,810 FUEL</dd></div>
+                <div><dt>Lifetime Fuel Output</dt><dd>109,481 FUEL</dd></div>
+                <div><dt>Net Fuel Position</dt><dd class="positive">+66,671 FUEL</dd></div>
+                <div><dt>Refinery Allocation</dt><dd>84%</dd></div>
+                <div><dt>Pipeline</dt><dd>Permian Mainline</dd></div>
+                <div><dt>Token ID</dt><dd>#8172</dd></div>
+                <div><dt>Owner</dt><dd>0x3A7F...9B2C</dd></div>
+              </dl>
+            </div>
+          </section>
+
+          <aside class="right-rail">
+            <section class="panel">
+              <h2>Actions</h2>
+              <button>View on Map</button>
+              <button>Manage Refinery Allocation</button>
+              <button>View Production History</button>
+              <button>Transfer Asset</button>
+              <button>List for Sale</button>
+            </section>
+
+            <section class="panel timeline">
+              <h2>Well Timeline</h2>
+              <ol>
+                <li><span></span><strong>Spudded</strong><em>Jan 12, 2026</em></li>
+                <li><span></span><strong>Target Depth Reached</strong><em>Jan 28, 2026</em></li>
+                <li><span></span><strong>Completed</strong><em>Feb 3, 2026</em></li>
+                <li><span></span><strong>Connected to Pipeline</strong><em>Feb 6, 2026</em></li>
+                <li class="live"><span></span><strong>Producing</strong><em>Feb 8, 2026</em></li>
+                <li class="muted"><span></span><strong>Estimated Depletion</strong><em>~2032</em></li>
+                <li class="muted"><span></span><strong>Capping (Est.)</strong><em>~2032</em></li>
+              </ol>
+            </section>
+          </aside>
+
+          <section class="panel chart-panel">
+            <div class="panel-head">
+              <h2>Production Chart</h2>
+              <button>6 Months</button>
+            </div>
+            <canvas id="productionChart" width="440" height="180"></canvas>
+          </section>
+
+          <section class="panel reserves">
+            <h2>Reserve Details</h2>
+            <div class="reserve-bar"><i style="width:81%"></i></div>
+            <dl>
+              <div><dt>Initial Reserve</dt><dd>482,700 BOE</dd></div>
+              <div><dt>Remaining Reserve</dt><dd>391,228 BOE</dd></div>
+              <div><dt>Produced to Date</dt><dd>91,472 BOE</dd></div>
+              <div><dt>Estimated Depletion</dt><dd>~6.1 years</dd></div>
+            </dl>
+          </section>
+
+          <section class="panel breakdown">
+            <h2>Resource Breakdown</h2>
+            <div class="donut" aria-label="Light crude 82%, natural gas 12%, NGL 6%"></div>
+            <ul>
+              <li><span class="sand"></span>Light Crude <strong>82%</strong></li>
+              <li><span class="steel"></span>Natural Gas <strong>12%</strong></li>
+              <li><span class="dark"></span>NGL <strong>6%</strong></li>
+            </ul>
+          </section>
+
+          <section class="panel map-card">
+            <div class="map-image"></div>
+            <div class="map-info">
+              <span>Location</span>
+              <strong>Permian Basin</strong>
+              <p>Reeves County, TX</p>
+              <button>View Satellite</button>
+            </div>
+          </section>
+
+          <section class="panel portfolio">
+            <div class="panel-head">
+              <h2>My Portfolio</h2>
+              <div class="tabs"><span>Wells (7)</span><span>Refineries (1)</span><span>Permits (1)</span></div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Resource</th>
+                  <th>Status</th>
+                  <th>Production</th>
+                  <th>Remaining</th>
+                  <th>Net Fuel</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="selected">
+                  <td>Midnight State #14</td>
+                  <td>Light Crude</td>
+                  <td><span class="positive">Producing</span></td>
+                  <td>318 BOE/d</td>
+                  <td>391,228</td>
+                  <td class="positive">+66,671</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <td>Red Mesa #3</td>
+                  <td>Natural Gas</td>
+                  <td><span class="positive">Producing</span></td>
+                  <td>1,120 BOE/d</td>
+                  <td>2,104,770</td>
+                  <td class="positive">+312,440</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <td>Coyote Draw #1</td>
+                  <td>Heavy Crude</td>
+                  <td>Developing</td>
+                  <td>—</td>
+                  <td>876,000</td>
+                  <td>—</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <td>Lone Pine #7</td>
+                  <td>Dry Hole</td>
+                  <td>Capped</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td class="negative">-28,400</td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="panel activity">
+            <div class="panel-head">
+              <h2>Live Activity</h2>
+              <button>All</button>
+            </div>
+            <ul>
+              <li><time>2m</time>Well #7710 completed and connected (Eagle Ford)</li>
+              <li><time>6m</time>48,200 FUEL spent on drilling (Permian)</li>
+              <li><time>11m</time>Refinery #003 filled to 92%</li>
+              <li><time>17m</time>DRL Permit #0912 sold for 12.4 ETH</li>
+              <li><time>23m</time>Well #6621 reached target depth (Williston)</li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
