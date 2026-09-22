@@ -97,12 +97,10 @@ a {
 }
 
 .side-nav a {
-  display: grid;
-  grid-template-columns: 30px 1fr;
+  display: flex;
   align-items: center;
-  gap: 8px;
   min-height: 42px;
-  padding: 0 18px;
+  padding: 0 22px;
   border-left: 3px solid transparent;
   border-bottom: 1px solid rgba(216, 221, 224, 0.14);
   color: #d8ddda;
@@ -118,22 +116,11 @@ a {
   border-top: 1px solid rgba(216, 221, 224, 0.14);
 }
 
-.side-nav span {
-  color: #bec6c4;
-  font-size: 16px;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
-}
-
 .side-nav a.active,
 .side-nav a:hover {
   border-left-color: var(--titanium);
   background: linear-gradient(90deg, rgba(216, 221, 224, 0.28), rgba(216, 221, 224, 0.08) 48%, transparent);
   color: #ffffff;
-}
-
-.side-nav a.active span,
-.side-nav a:hover span {
-  color: var(--titanium);
 }
 
 .sidebar-art {
@@ -706,8 +693,6 @@ tr.selected {
   }
 
   .side-nav a {
-    grid-template-columns: 1fr;
-    justify-items: center;
     padding: 0;
     font-size: 0;
   }
