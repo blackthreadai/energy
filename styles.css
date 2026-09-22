@@ -526,9 +526,9 @@ dd {
   background:
     radial-gradient(circle at 55% 52%, rgba(216, 221, 224, 0.95) 0 3px, transparent 4px),
     radial-gradient(circle at 55% 52%, rgba(216, 221, 224, 0.22) 0 10px, transparent 11px),
-    linear-gradient(180deg, rgba(5, 8, 8, 0.12), rgba(5, 8, 8, 0.24)),
+    linear-gradient(180deg, rgba(5, 8, 8, 0.22), rgba(5, 8, 8, 0.42)),
     url("./assets/location-terrain.jpg") center / cover;
-  filter: saturate(0.74) contrast(1.12) brightness(0.88);
+  filter: saturate(0.62) contrast(1.16) brightness(0.72);
 }
 
 .map-info {
@@ -540,16 +540,17 @@ dd {
   display: block;
   color: #d8d0c2;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 900;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
 }
 
 .map-info strong {
   display: block;
-  margin-top: 6px;
+  margin-top: 8px;
   color: var(--green);
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 900;
 }
 
 .map-info p {
