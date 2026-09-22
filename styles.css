@@ -337,11 +337,12 @@ a {
 
 h1 {
   margin: 0;
-  color: #efe7d8;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 26px;
+  color: #f0eadf;
+  font-family: "Arial Narrow", "Avenir Next Condensed", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
   line-height: 1;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
