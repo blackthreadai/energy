@@ -57,8 +57,10 @@ a {
   height: 100vh;
   border-right: 1px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(5, 8, 8, 0.88), rgba(5, 7, 7, 0.98)),
+    linear-gradient(180deg, rgba(5, 8, 8, 0.88) 0%, rgba(5, 8, 8, 0.7) 42%, rgba(5, 7, 7, 0.9) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.22), transparent 50%, rgba(0, 0, 0, 0.3)),
     url("./assets/sidebar-badlands.svg") center bottom / cover;
+  background-blend-mode: normal, multiply, normal;
 }
 
 .brand-mark {
@@ -139,7 +141,7 @@ a {
   min-height: 250px;
   padding: 24px 18px;
   border-top: 1px solid var(--line);
-  background: linear-gradient(180deg, transparent, rgba(2, 4, 4, 0.7));
+  background: linear-gradient(180deg, rgba(2, 4, 4, 0.08), rgba(2, 4, 4, 0.52));
   text-transform: uppercase;
 }
 
