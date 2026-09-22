@@ -65,17 +65,17 @@ a {
 .brand-mark {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   height: 70px;
-  padding: 0 12px;
+  padding: 0 10px;
   text-transform: uppercase;
 }
 
 .brand-icon {
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid var(--titanium);
   color: #f0eadf;
   font-size: 16px;
@@ -88,10 +88,10 @@ a {
 .brand-mark strong {
   display: block;
   color: #f0eadf;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 900;
   line-height: 1.1;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.01em;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9);
 }
 
