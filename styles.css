@@ -10,6 +10,8 @@
   --dim: #5f6865;
   --gold: #c9ad77;
   --gold-soft: #806b46;
+  --titanium: #d8dde0;
+  --titanium-soft: #9ca6aa;
   --green: #6ed486;
   --red: #c76860;
   --blue-black: #071112;
@@ -111,29 +113,36 @@ a {
   min-height: 42px;
   padding: 0 18px;
   border-left: 3px solid transparent;
-  color: #9a9f9c;
+  border-bottom: 1px solid rgba(216, 221, 224, 0.14);
+  color: #d8ddda;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0.12em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+}
+
+.side-nav a:first-child {
+  border-top: 1px solid rgba(216, 221, 224, 0.14);
 }
 
 .side-nav span {
-  color: var(--dim);
+  color: #bec6c4;
   font-size: 16px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
 }
 
 .side-nav a.active,
 .side-nav a:hover {
-  border-left-color: var(--gold);
-  background: linear-gradient(90deg, rgba(201, 173, 119, 0.16), transparent);
-  color: var(--text);
+  border-left-color: var(--titanium);
+  background: linear-gradient(90deg, rgba(216, 221, 224, 0.28), rgba(216, 221, 224, 0.08) 48%, transparent);
+  color: #ffffff;
 }
 
 .side-nav a.active span,
 .side-nav a:hover span {
-  color: var(--gold);
+  color: var(--titanium);
 }
 
 .sidebar-art {
