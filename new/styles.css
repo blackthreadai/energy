@@ -444,7 +444,7 @@ h2,
     radial-gradient(circle at 45% 45%, rgba(255, 124, 47, 0.16), transparent 26%),
     radial-gradient(circle at 60% 42%, rgba(255, 221, 149, 0.12), transparent 18%),
     linear-gradient(180deg, rgba(4, 9, 9, 0.3), rgba(1, 4, 4, 0.94)),
-    url("../assets/location-terrain.jpg") center / cover;
+    url("/assets/location-terrain.jpg") center / cover;
   filter: saturate(0.9) contrast(1.1);
 }
 
