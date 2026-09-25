@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WILDCATTER - Terminal Map</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="terminal">
+      <header class="topbar">
+        <a class="brand" href="../" aria-label="Wildcatter home">
+          <span class="brand-word">WILDCATTER</span>
+          <span class="brand-sub">THE ENERGY RESERVE</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Terminal navigation">
+          <a class="active" href="#">Terminal</a>
+          <a href="#">Explore</a>
+          <a href="#">Drill</a>
+          <a href="#">Produce</a>
+          <a href="#">Refine</a>
+          <a href="#">Market</a>
+          <a href="#">Intelligence</a>
+        </nav>
+
+        <label class="search">
+          <span></span>
+          <input value="" placeholder="Search wells, assets, wallets..." />
+        </label>
+
+        <button class="wallet">
+          <i>W</i>
+          <span>0x3A7F...9B2C</span>
+          <b>⌄</b>
+        </button>
+
+        <time class="utc">
+          <span>SEP 22, 2026</span>
+          <strong>14:27:18 UTC</strong>
+        </time>
+      </header>
+
+      <section class="ticker" aria-label="Market prices">
+        <article>
+          <span>$FUEL</span>
+          <strong>0.4827</strong>
+          <canvas data-line="up"></canvas>
+          <em>+12.4%</em>
+        </article>
+        <article>
+          <span>WTI</span>
+          <strong>72.18</strong>
+          <canvas data-line="slow"></canvas>
+          <em>+1.6%</em>
+        </article>
+        <article>
+          <span>BRENT</span>
+          <strong>76.03</strong>
+          <canvas data-line="slow"></canvas>
+          <em>+1.4%</em>
+        </article>
+        <article>
+          <span>NAT GAS</span>
+          <strong>2.48</strong>
+          <canvas data-line="down"></canvas>
+          <em class="down">-0.8%</em>
+        </article>
+        <article>
+          <span>XLE</span>
+          <strong>92.31</strong>
+          <canvas data-line="up"></canvas>
+          <em>+0.9%</em>
+        </article>
+        <article>
+          <span>BTC</span>
+          <strong>114,230</strong>
+          <canvas data-line="up"></canvas>
+          <em>+2.1%</em>
+        </article>
+        <article>
+          <span>ETH</span>
+          <strong>4,382</strong>
+          <canvas data-line="slow"></canvas>
+          <em>+1.8%</em>
+        </article>
+        <article class="timezones">
+          <dl>
+            <div><dt>New York</dt><dd>10:27</dd></div>
+            <div><dt>London</dt><dd>15:27</dd></div>
+            <div><dt>Dubai</dt><dd>18:27</dd></div>
+            <div><dt>Singapore</dt><dd>22:27</dd></div>
+          </dl>
+        </article>
+      </section>
+
+      <section class="dashboard">
+        <aside class="panel activity">
+          <div class="panel-head">
+            <h2>Live Activity</h2>
+            <button>All ▾</button>
+          </div>
+          <ol>
+            <li class="red"><time>14:26</time><i>⛯</i><span><b>Drill Started</b><small>DRL-00427 | Permian</small></span></li>
+            <li class="green"><time>14:19</time><i>▲</i><span><b>Well Connected</b><small>W-0611 | Eagle Ford</small></span></li>
+            <li class="gold"><time>13:58</time><i>●</i><span><b>Refining Complete</b><small>18,400 $FUEL | W-0390</small></span></li>
+            <li class="red"><time>13:24</time><i>▣</i><span><b>Permit Purchased</b><small>DRL-00991</small></span></li>
+            <li><time>12:41</time><i>△</i><span><b>New Well Discovered</b><small>Offshore GOM-17</small></span></li>
+            <li class="green"><time>11:37</time><i>∨</i><span><b>Exploration Success</b><small>61% confidence | W-0782</small></span></li>
+            <li class="cyan"><time>09:18</time><i>⊗</i><span><b>$FUEL Trade</b><small>25,400 @ 0.4823</small></span></li>
+            <li><time>08:41</time><i>▣</i><span><b>Refinery Queue</b><small>57,000 bbl | ETA 3h</small></span></li>
+            <li class="gold"><time>07:15</time><i>◬</i><span><b>New Block Open</b><small>Bakken-12</small></span></li>
+            <li class="red"><time>06:22</time><i>×</i><span><b>Exploration Failed</b><small>DRL-00671 | dry hole</small></span></li>
+          </ol>
+          <a class="view-all" href="#">View all activity →</a>
+        </aside>
+
+        <section class="panel map-panel">
+          <div class="map-tabs">
+            <a class="active" href="#">Global Map</a>
+            <a href="#">Permian</a>
+            <a href="#">Bakken</a>
+            <a href="#">Eagle Ford</a>
+            <a href="#">Haynesville</a>
+            <a href="#">Offshore</a>
+            <a href="#">International</a>
+          </div>
+
+          <div class="map-stage" aria-label="Interactive asset map preview">
+            <div class="grid-plane"></div>
+            <div class="side-tools">
+              <button class="active">Wells</button>
+              <button>Refineries</button>
+              <button>Pipelines</button>
+              <button>Permits</button>
+              <button>Layers</button>
+            </div>
+            <div class="filter-box">
+              <h3>Filters</h3>
+              <label><input type="checkbox" checked /> Active Wells</label>
+              <label><input type="checkbox" /> Drilling</label>
+              <label><input type="checkbox" /> Refining</label>
+              <label><input type="checkbox" /> Permit Blocks</label>
+              <label><input type="checkbox" /> Pipelines</label>
+              <label><input type="checkbox" /> Recent Activity</label>
+            </div>
+            <div class="zoom-tools"><button>+</button><button>−</button><button>◎</button></div>
+
+            <div class="well well-a"><i></i></div>
+            <div class="well well-b gold"><i></i></div>
+            <div class="well well-c red"><i></i></div>
+            <div class="well well-d"><i></i></div>
+            <div class="well well-e gold"><i></i></div>
+            <div class="well well-f red"><i></i></div>
+            <div class="well well-g"><i></i></div>
+            <div class="well well-h gold"><i></i></div>
+            <div class="well well-i"><i></i></div>
+            <div class="well well-j red"><i></i></div>
+            <div class="well well-k"><i></i></div>
+            <div class="well well-l gold"><i></i></div>
+
+            <article class="region permian"><b>PERMIAN BASIN</b><span>428 active wells</span></article>
+            <article class="region bakken"><b>BAKKEN</b><span>176 active wells</span></article>
+            <article class="region eagle"><b>EAGLE FORD</b><span>312 active wells</span></article>
+            <article class="region haynesville"><b>HAYNESVILLE</b><span>92 active wells</span></article>
+            <article class="region gulf"><b>GULF OF MEXICO</b><span>198 active wells</span></article>
+
+            <div class="legend">
+              <span><i class="gold"></i> Active Well</span>
+              <span><i></i> Exploration</span>
+              <span><i class="red"></i> Drilling</span>
+              <span><i class="diamond"></i> Permit Block</span>
+              <span><i class="orange"></i> Refining</span>
+              <span><i class="x"></i> Dry Hole</span>
+            </div>
+
+            <div class="globe"><span></span></div>
+          </div>
+        </section>
+
+        <aside class="right-stack">
+          <section class="panel overview">
+            <h2>Network Overview</h2>
+            <div class="overview-grid">
+              <article><i>♜</i><strong>1,284</strong><span>Active Wells</span></article>
+              <article><i>⛏</i><strong>312</strong><span>Drilling</span></article>
+              <article><i>♖</i><strong>732</strong><span>Producing</span></article>
+              <article><i>▤</i><strong>198</strong><span>Refining</span></article>
+              <article><i>♙</i><strong>42</strong><span>Capped</span></article>
+            </div>
+          </section>
+
+          <section class="panel resource">
+            <h2>Resource Distribution</h2>
+            <div class="donut">
+              <div><strong>8,421,337</strong><span>$FUEL</span><small>Total Production</small></div>
+            </div>
+            <ul>
+              <li><i class="light"></i><span>Light Crude</span><b>42%</b></li>
+              <li><i class="heavy"></i><span>Heavy Crude</span><b>33%</b></li>
+              <li><i class="gas"></i><span>Natural Gas</span><b>20%</b></li>
+              <li><i class="other"></i><span>Other</span><b>5%</b></li>
+            </ul>
+          </section>
+
+          <section class="panel regions">
+            <h2>Key Regions</h2>
+            <table>
+              <thead><tr><th>Region</th><th>Active</th><th>Reserves (bbl)</th></tr></thead>
+              <tbody>
+                <tr><td>Permian</td><td>428</td><td>412M</td></tr>
+                <tr><td>Bakken</td><td>176</td><td>188M</td></tr>
+                <tr><td>Eagle Ford</td><td>312</td><td>276M</td></tr>
+                <tr><td>Haynesville</td><td>92</td><td>140M</td></tr>
+                <tr><td>Offshore</td><td>198</td><td>320M</td></tr>
+                <tr><td>International</td><td>78</td><td>206M</td></tr>
+              </tbody>
+            </table>
+          </section>
+        </aside>
+
+        <section class="panel market">
+          <div class="panel-head spread">
+            <div>
+              <h2>$FUEL Market</h2>
+              <strong>0.4827 <small>USDC</small></strong>
+              <em>+12.4%</em>
+            </div>
+            <nav><a>1H</a><a class="active">1D</a><a>1W</a><a>1M</a><a>3M</a><a>ALL</a></nav>
+          </div>
+          <canvas id="marketChart" width="520" height="140"></canvas>
+          <dl class="market-stats">
+            <div><dt>24h Vol</dt><dd>12.4M</dd></div>
+            <div><dt>Liquidity</dt><dd>28.7M</dd></div>
+            <div><dt>Market Cap</dt><dd>48.1M</dd></div>
+            <div><dt>Circ. Supply</dt><dd>100.0M</dd></div>
+            <div><dt>Total Supply</dt><dd>100.0M</dd></div>
+          </dl>
+        </section>
+
+        <section class="panel order-book">
+          <div class="panel-head"><h2>Order Book</h2><button>0.0001 ▾</button></div>
+          <table>
+            <thead><tr><th>Price (USDC)</th><th>Size</th><th>Total</th></tr></thead>
+            <tbody>
+              <tr class="ask"><td>0.4835</td><td>142,800</td><td>1,287,600</td></tr>
+              <tr class="ask"><td>0.4834</td><td>98,200</td><td>1,144,800</td></tr>
+              <tr class="ask"><td>0.4833</td><td>76,400</td><td>1,046,600</td></tr>
+              <tr class="ask"><td>0.4832</td><td>52,100</td><td>970,200</td></tr>
+              <tr class="ask"><td>0.4831</td><td>41,300</td><td>918,100</td></tr>
+              <tr class="mid"><td colspan="3">0.4827 ↑</td></tr>
+              <tr class="bid"><td>0.4826</td><td>12,300</td><td>12,300</td></tr>
+              <tr class="bid"><td>0.4825</td><td>18,600</td><td>30,900</td></tr>
+              <tr class="bid"><td>0.4824</td><td>38,800</td><td>67,700</td></tr>
+              <tr class="bid"><td>0.4823</td><td>52,400</td><td>120,100</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="panel trades">
+          <h2>Trades</h2>
+          <table>
+            <thead><tr><th>Time</th><th>Price</th><th>Size</th><th>Wallet</th></tr></thead>
+            <tbody>
+              <tr><td>14:27:12</td><td class="bid">0.4827</td><td>2,400</td><td>0x9F2C...7A1D</td></tr>
+              <tr><td>14:27:05</td><td class="ask">0.4825</td><td>10,000</td><td>0x6B8E...3D71</td></tr>
+              <tr><td>14:26:58</td><td class="ask">0.4831</td><td>5,600</td><td>0x7C1A...9E3F</td></tr>
+              <tr><td>14:26:42</td><td class="bid">0.4823</td><td>25,000</td><td>0x2098...8F44</td></tr>
+              <tr><td>14:26:17</td><td class="ask">0.4826</td><td>12,400</td><td>0x6D21...8A7C</td></tr>
+              <tr><td>14:25:59</td><td class="bid">0.4826</td><td>8,100</td><td>0x3E90...2811</td></tr>
+              <tr><td>14:25:33</td><td class="ask">0.4826</td><td>50,000</td><td>0xAF19...0C2D</td></tr>
+              <tr><td>14:25:12</td><td class="bid">0.4825</td><td>6,700</td><td>0x29D4...7F81</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="panel portfolio">
+          <div class="panel-head">
+            <h2>Your Portfolio</h2>
+            <nav><a class="active">Assets</a><a>Wells</a><a>Refineries</a><a>Permits</a></nav>
+          </div>
+          <table>
+            <tbody>
+              <tr><td><i>⛯</i>$FUEL</td><td>125,430</td><td>$60,571</td></tr>
+              <tr><td><i>▣</i>DRL Permits</td><td>3</td><td><a>View</a></td></tr>
+              <tr><td><i>▤</i>Refineries</td><td>1</td><td><a>View</a></td></tr>
+              <tr><td><i>⛯</i>Active Wells</td><td>2</td><td><a>View</a></td></tr>
+              <tr><td><i>♜</i>Completed Wells</td><td>5</td><td><a>View</a></td></tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <footer>
+        <span>WILDCATTER <small>THE ENERGY RESERVE</small></span>
+        <span>ENERGY BUILDS EMPIRES.</span>
+        <span>REAL ASSETS. DIGITAL FRONTIERS.</span>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
