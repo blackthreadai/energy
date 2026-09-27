@@ -452,7 +452,7 @@ h1 {
   margin: 0;
   color: var(--reserve-gold);
   font-family: "Arial Narrow", "Avenir Next Condensed", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 900;
   line-height: 1;
   letter-spacing: 0.04em;
@@ -615,6 +615,37 @@ h1 {
 .market-list dd {
   text-align: left;
   font-size: 13px;
+}
+
+.metric-change {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.lock-icon {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 7px;
+  margin-right: 4px;
+  border: 1px solid var(--reserve-gold);
+  border-radius: 1px;
+  transform: translateY(1px);
+}
+
+.lock-icon::before {
+  position: absolute;
+  content: "";
+  left: 1px;
+  top: -5px;
+  width: 4px;
+  height: 5px;
+  border: 1px solid var(--reserve-gold);
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 dt {
