@@ -84,68 +84,147 @@
         </section>
 
         <div class="content-grid">
-          <section class="permit-card panel">
-            <div class="permit-top">
-              <span>The Energy Reserve</span>
-              <b>Autonomous Drill Permit</b>
-              <strong>DRL-00991</strong>
-              <em>Valid</em>
-            </div>
-
-            <div class="permit-seal permit-photo" aria-label="Desert energy reserve landscape"></div>
-
-            <dl class="permit-specs">
-              <div><dt>Permit Class</dt><dd>Exploration</dd></div>
-              <div><dt>Expiration</dt><dd>Perpetual</dd></div>
-              <div><dt>Permit Holder</dt><dd>0x354......4877C</dd></div>
-              <div><dt>Fuel Reserve</dt><dd>109,481</dd></div>
-              <div><dt>Current Assets</dt><dd class="positive">0009</dd></div>
-            </dl>
-
-            <div class="permit-footer">
-              <p>This Autonomous Drill Permit is subjected to the Energy Policy Act and applicable rules of The Energy Reserve Protocol.</p>
-            </div>
-          </section>
-
-          <section class="asset-card panel">
-            <div class="asset-head">
-              <div>
-                <h1>$FUEL / USDC</h1>
-                <p>Energy Reserve Market <span>Live protocol pair</span></p>
-              </div>
-              <div class="range-tabs" aria-label="$FUEL chart range">
-                <button>1H</button>
-                <button class="active">1D</button>
-                <button>1W</button>
-                <button>1M</button>
-                <button>3M</button>
-                <button>ALL</button>
-              </div>
-              <div class="price-badge">
-                <strong>$0.7842</strong>
-                <span>+$0.0344 / +4.6%</span>
-              </div>
-            </div>
-
-            <div class="asset-body trade-body">
-              <div class="trade-chart">
-                <canvas id="fuelTradeChart" aria-label="$FUEL candlestick trading chart"></canvas>
+          <div class="left-stack">
+            <section class="permit-card panel">
+              <div class="permit-top">
+                <span>The Energy Reserve</span>
+                <b>Autonomous Drill Permit</b>
+                <strong>DRL-00991</strong>
+                <em>Valid</em>
               </div>
 
-              <dl class="spec-list market-list">
-                <div><dt>Open</dt><dd>$0.7418</dd></div>
-                <div><dt>High</dt><dd class="positive">$0.8126</dd></div>
-                <div><dt>Low</dt><dd class="negative">$0.7194</dd></div>
-                <div><dt>Volume 24h</dt><dd>$2.84M <span class="metric-change positive">+8.7%</span></dd></div>
-                <div><dt>Liquidity</dt><dd><span class="lock-icon" aria-hidden="true"></span> $18.72M</dd></div>
-                <div><dt>Market Cap</dt><dd>$322.4M <span class="metric-change positive">+4.6%</span></dd></div>
-                <div><dt>Circulating</dt><dd>412.63M</dd></div>
-                <div><dt>Reserve Ratio</dt><dd class="positive">84%</dd></div>
-                <div><dt>Volatility</dt><dd>12.8%</dd></div>
-                <div><dt>Last Trade</dt><dd>0x3A7F...9B2C</dd></div>
+              <div class="permit-seal permit-photo" aria-label="Desert energy reserve landscape"></div>
+
+              <dl class="permit-specs">
+                <div><dt>Permit Class</dt><dd>Exploration</dd></div>
+                <div><dt>Expiration</dt><dd>Perpetual</dd></div>
+                <div><dt>Permit Holder</dt><dd>0x354......4877C</dd></div>
+                <div><dt>Fuel Reserve</dt><dd>109,481</dd></div>
+                <div><dt>Current Assets</dt><dd class="positive">0009</dd></div>
               </dl>
-            </div>
-          </section>
+
+              <div class="permit-footer">
+                <p>This Autonomous Drill Permit is subjected to the Energy Policy Act and applicable rules of The Energy Reserve Protocol.</p>
+              </div>
+            </section>
+
+            <section class="panel map-card">
+              <div class="map-image"><span class="map-marker"></span></div>
+              <div class="map-info">
+                <span>Location</span>
+                <strong>Permian Basin</strong>
+                <p>Reeves County, TX</p>
+                <button>View Satellite</button>
+              </div>
+            </section>
+          </div>
+
+          <div class="main-stack">
+            <section class="asset-card panel">
+              <div class="asset-head">
+                <div>
+                  <h1>$FUEL / USDC</h1>
+                  <p>Energy Reserve Market <span>Live protocol pair</span></p>
+                </div>
+                <div class="range-tabs" aria-label="$FUEL chart range">
+                  <button>1H</button>
+                  <button class="active">1D</button>
+                  <button>1W</button>
+                  <button>1M</button>
+                  <button>3M</button>
+                  <button>ALL</button>
+                </div>
+                <div class="price-badge">
+                  <strong>$0.7842</strong>
+                  <span>+$0.0344 / +4.6%</span>
+                </div>
+              </div>
+
+              <div class="asset-body trade-body">
+                <div class="trade-chart">
+                  <canvas id="fuelTradeChart" aria-label="$FUEL candlestick trading chart"></canvas>
+                </div>
+
+                <dl class="spec-list market-list">
+                  <div><dt>Open</dt><dd>$0.7418</dd></div>
+                  <div><dt>High</dt><dd class="positive">$0.8126</dd></div>
+                  <div><dt>Low</dt><dd class="negative">$0.7194</dd></div>
+                  <div><dt>Volume 24h</dt><dd>$2.84M <span class="metric-change positive">+8.7%</span></dd></div>
+                  <div><dt>Liquidity</dt><dd><span class="lock-icon" aria-hidden="true"></span> $18.72M</dd></div>
+                  <div><dt>Market Cap</dt><dd>$322.4M <span class="metric-change positive">+4.6%</span></dd></div>
+                  <div><dt>Circulating</dt><dd>412.63M</dd></div>
+                  <div><dt>Reserve Ratio</dt><dd class="positive">84%</dd></div>
+                  <div><dt>Volatility</dt><dd>12.8%</dd></div>
+                  <div><dt>Last Trade</dt><dd>0x3A7F...9B2C</dd></div>
+                </dl>
+              </div>
+            </section>
+
+            <section class="panel chart-panel">
+              <div class="panel-head">
+                <h2>Production Chart</h2>
+              </div>
+              <canvas id="productionChart" width="440" height="180"></canvas>
+            </section>
+
+            <section class="panel portfolio">
+              <div class="panel-head">
+                <h2>My Portfolio</h2>
+                <div class="tabs"><span>Wells (7)</span><span>Refineries (1)</span><span>Permits (1)</span></div>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Resource</th>
+                    <th>Status</th>
+                    <th>Production</th>
+                    <th>Remaining</th>
+                    <th>Net Fuel</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="selected">
+                    <td>Midnight State #14</td>
+                    <td>Light Crude</td>
+                    <td><span class="positive">Producing</span></td>
+                    <td>318 BOE/d</td>
+                    <td>391,228</td>
+                    <td class="positive">+66,671</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>Red Mesa #3</td>
+                    <td>Natural Gas</td>
+                    <td><span class="positive">Producing</span></td>
+                    <td>1,120 BOE/d</td>
+                    <td>2,104,770</td>
+                    <td class="positive">+312,440</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>Coyote Draw #1</td>
+                    <td>Heavy Crude</td>
+                    <td>Developing</td>
+                    <td>—</td>
+                    <td>876,000</td>
+                    <td>—</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>Lone Pine #7</td>
+                    <td>Dry Hole</td>
+                    <td>Capped</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="negative">-28,400</td>
+                    <td>...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
 
           <aside class="right-rail">
             <section class="panel dex-widget">
@@ -190,81 +269,6 @@
               </ul>
             </section>
           </aside>
-
-          <section class="panel chart-panel">
-            <div class="panel-head">
-              <h2>Production Chart</h2>
-            </div>
-            <canvas id="productionChart" width="440" height="180"></canvas>
-          </section>
-
-          <section class="panel map-card">
-            <div class="map-image"><span class="map-marker"></span></div>
-            <div class="map-info">
-              <span>Location</span>
-              <strong>Permian Basin</strong>
-              <p>Reeves County, TX</p>
-              <button>View Satellite</button>
-            </div>
-          </section>
-
-          <section class="panel portfolio">
-            <div class="panel-head">
-              <h2>My Portfolio</h2>
-              <div class="tabs"><span>Wells (7)</span><span>Refineries (1)</span><span>Permits (1)</span></div>
-            </div>
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Resource</th>
-                  <th>Status</th>
-                  <th>Production</th>
-                  <th>Remaining</th>
-                  <th>Net Fuel</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="selected">
-                  <td>Midnight State #14</td>
-                  <td>Light Crude</td>
-                  <td><span class="positive">Producing</span></td>
-                  <td>318 BOE/d</td>
-                  <td>391,228</td>
-                  <td class="positive">+66,671</td>
-                  <td>...</td>
-                </tr>
-                <tr>
-                  <td>Red Mesa #3</td>
-                  <td>Natural Gas</td>
-                  <td><span class="positive">Producing</span></td>
-                  <td>1,120 BOE/d</td>
-                  <td>2,104,770</td>
-                  <td class="positive">+312,440</td>
-                  <td>...</td>
-                </tr>
-                <tr>
-                  <td>Coyote Draw #1</td>
-                  <td>Heavy Crude</td>
-                  <td>Developing</td>
-                  <td>—</td>
-                  <td>876,000</td>
-                  <td>—</td>
-                  <td>...</td>
-                </tr>
-                <tr>
-                  <td>Lone Pine #7</td>
-                  <td>Dry Hole</td>
-                  <td>Capped</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="negative">-28,400</td>
-                  <td>...</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
         </div>
       </main>
     </div>
