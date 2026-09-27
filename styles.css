@@ -10,6 +10,7 @@
   --dim: #5f6865;
   --titanium: #d8dde0;
   --titanium-soft: #9ca6aa;
+  --reserve-gold: #ffd47b;
   --green: #6ed486;
   --red: #c76860;
   --blue-black: #071112;
@@ -72,7 +73,7 @@ a {
 
 .brand-mark strong {
   display: block;
-  color: #ffffff;
+  color: var(--reserve-gold);
   font-size: 34px;
   font-weight: 900;
   line-height: 0.82;
@@ -144,7 +145,7 @@ a {
 
 .sidebar-art p {
   margin: 0;
-  color: #f0eadf;
+  color: var(--reserve-gold);
   font-size: 17px;
   font-weight: 900;
   line-height: 1.18;
