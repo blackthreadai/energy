@@ -679,9 +679,6 @@ dd {
 .right-rail {
   grid-column: 4;
   grid-row: 1;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 8px;
   height: 100%;
   min-height: 0;
   overflow: hidden;
