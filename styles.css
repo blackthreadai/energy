@@ -631,7 +631,7 @@ dd {
 }
 
 .chart-panel {
-  grid-column: 1;
+  grid-column: 2 / 4;
   grid-row: 2;
   height: 195px;
   padding: 12px;
@@ -660,9 +660,9 @@ dd {
 
 .map-card {
   display: grid;
-  grid-column: 2 / 4;
+  grid-column: 1;
   grid-row: 2;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-rows: 1fr auto;
   height: 195px;
   padding: 0;
   overflow: hidden;
