@@ -392,7 +392,6 @@ a {
   position: relative;
   min-height: 116px;
   margin: 12px 0;
-  border: 1px solid rgba(216, 221, 224, 0.14);
   overflow: hidden;
   background: rgba(255, 255, 255, 0.02);
 }
