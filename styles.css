@@ -65,9 +65,26 @@ a {
 .brand-mark {
   display: flex;
   align-items: center;
+  gap: 9px;
   height: 70px;
   padding: 0 14px;
   text-transform: uppercase;
+}
+
+.brand-icon {
+  width: 26px;
+  height: 32px;
+  flex: 0 0 26px;
+  color: #ffffff;
+  overflow: visible;
+}
+
+.brand-icon path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
 }
 
 .brand-mark strong {
@@ -859,6 +876,10 @@ tr.selected {
   .brand-mark {
     justify-content: center;
     padding: 0 8px;
+  }
+
+  .brand-icon {
+    display: none;
   }
 
   .brand-mark strong {
