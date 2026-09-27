@@ -72,15 +72,31 @@ a {
 }
 
 .brand-icon {
-  width: 30px;
-  height: 30px;
-  flex: 0 0 30px;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
   color: #ffffff;
   overflow: visible;
 }
 
-.brand-icon path {
+.brand-seal .seal-ring,
+.brand-seal .seal-inner {
+  fill: none;
+  stroke: currentColor;
+}
+
+.brand-seal .seal-ring {
+  stroke-width: 1.5;
+}
+
+.brand-seal .seal-inner {
+  opacity: 0.46;
+  stroke-width: 0.8;
+}
+
+.brand-seal .seal-eagle {
   fill: currentColor;
+  opacity: 0.9;
 }
 
 .brand-mark strong {
