@@ -100,7 +100,7 @@ function drawFuelTradeChart() {
   const width = rect.width;
   const height = rect.height;
   const padL = 34;
-  const padR = 44;
+  const padR = 74;
   const padT = 16;
   const padB = 30;
   const volH = 46;
@@ -126,7 +126,7 @@ function drawFuelTradeChart() {
     const y = padT + (chartH / 4) * i;
     fuelCtx.beginPath();
     fuelCtx.moveTo(padL, y);
-    fuelCtx.lineTo(width - padR + 8, y);
+    fuelCtx.lineTo(width - padR, y);
     fuelCtx.stroke();
   }
   for (let i = 0; i <= 6; i += 1) {
@@ -170,20 +170,20 @@ function drawFuelTradeChart() {
   fuelCtx.setLineDash([5, 5]);
   fuelCtx.beginPath();
   fuelCtx.moveTo(padL, latestY);
-  fuelCtx.lineTo(width - padR + 8, latestY);
+  fuelCtx.lineTo(width - padR, latestY);
   fuelCtx.stroke();
   fuelCtx.setLineDash([]);
 
   fuelCtx.fillStyle = "rgba(255, 212, 123, 0.14)";
-  fuelCtx.fillRect(width - padR + 10, latestY - 10, 38, 20);
+  fuelCtx.fillRect(width - padR + 12, latestY - 10, 38, 20);
   fuelCtx.fillStyle = "#ffd47b";
   fuelCtx.font = "900 10px Arial";
-  fuelCtx.fillText("$0.78", width - padR + 15, latestY + 4);
+  fuelCtx.fillText("$0.78", width - padR + 17, latestY + 4);
 
   fuelCtx.fillStyle = "#7f8783";
   fuelCtx.font = "10px Arial";
   [max, (max + min) / 2, min].forEach((value, i) => {
-    fuelCtx.fillText(`$${value.toFixed(2)}`, width - padR + 12, padT + (chartH / 2) * i + 3);
+    fuelCtx.fillText(`$${value.toFixed(2)}`, width - padR + 14, padT + (chartH / 2) * i + 3);
   });
   ["09:00", "12:00", "15:00", "18:00"].forEach((label, i) => {
     fuelCtx.fillText(label, padL + (chartW / 3) * i - 8, height - 9);
