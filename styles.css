@@ -333,89 +333,101 @@ a {
 .permit-card {
   grid-column: 1;
   grid-row: 1;
+  position: relative;
   display: grid;
-  grid-template-rows: auto 1fr auto auto;
   min-height: 415px;
-  padding: 14px;
+  padding: 12px 35px 12px 12px;
   overflow: hidden;
+  background:
+    radial-gradient(circle at 35% 0%, rgba(216, 221, 224, 0.14), transparent 38%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.08) 34%, rgba(0, 0, 0, 0.5)),
+    #060908;
 }
 
-.permit-top {
+.permit-card::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(216, 221, 224, 0.22);
+  pointer-events: none;
+}
+
+.permit-face {
+  position: relative;
+  z-index: 1;
   display: grid;
-  gap: 6px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--line);
+  grid-template-rows: auto auto auto auto 1fr auto auto;
+  gap: 12px;
+  min-width: 0;
 }
 
-.permit-top span,
-.permit-footer span {
+.permit-agency {
+  display: grid;
+  gap: 5px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(216, 221, 224, 0.5);
+  text-transform: uppercase;
+}
+
+.permit-agency span,
+.permit-agency em,
+.permit-title,
+.permit-legal,
+.permit-motto {
   color: var(--muted);
   text-transform: uppercase;
   font-size: 9px;
   font-weight: 900;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.24em;
 }
 
-.permit-top strong {
-  color: #f0eadf;
+.permit-agency strong {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: 0.1em;
+}
+
+.permit-agency em {
+  font-style: normal;
+}
+
+.permit-number {
+  display: grid;
+  gap: 8px;
+  align-items: start;
+}
+
+.permit-number strong {
+  color: #ffffff;
   font-family: "Arial Narrow", "Avenir Next Condensed", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 31px;
   font-weight: 900;
-  line-height: 1;
-  letter-spacing: 0.06em;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
-.permit-top em {
+.permit-number span {
+  align-self: start;
   width: fit-content;
-  min-height: 23px;
-  padding: 5px 10px 0;
+  padding: 5px 8px 4px;
   border: 1px solid rgba(255, 212, 123, 0.48);
   background: rgba(255, 212, 123, 0.12);
   color: var(--reserve-gold);
   text-transform: uppercase;
   font-size: 9px;
-  font-style: normal;
   font-weight: 900;
   letter-spacing: 0.16em;
 }
 
-.permit-seal {
-  position: relative;
-  display: grid;
-  place-items: center;
-  min-height: 116px;
-  margin: 12px 0;
-  border: 1px solid rgba(216, 221, 224, 0.14);
-  background:
-    linear-gradient(135deg, rgba(216, 221, 224, 0.08), transparent 45%),
-    radial-gradient(circle at 50% 50%, rgba(110, 212, 134, 0.16), transparent 52%),
-    rgba(255, 255, 255, 0.02);
-}
-
-.permit-seal::before,
-.permit-seal::after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(216, 221, 224, 0.16);
-}
-
-.permit-seal::before {
-  inset: 22px;
-}
-
-.permit-seal::after {
-  width: 58px;
-  height: 58px;
-  transform: rotate(45deg);
-}
-
-.permit-seal span {
-  z-index: 1;
-  color: #ffffff;
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 1;
-  text-shadow: 0 0 24px rgba(110, 212, 134, 0.46);
+.permit-title {
+  margin: 0;
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba(216, 221, 224, 0.38);
+  color: #d8d0c2;
+  line-height: 1.35;
 }
 
 .permit-specs {
@@ -424,31 +436,105 @@ a {
 
 .permit-specs div {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 10px;
-  min-height: 28px;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 8px;
+  min-height: 31px;
   align-items: center;
-  border-bottom: 1px solid rgba(216, 221, 224, 0.1);
+  border-bottom: 1px solid rgba(216, 221, 224, 0.22);
 }
 
 .permit-specs dd {
-  text-align: right;
-}
-
-.permit-footer {
-  display: grid;
-  gap: 10px;
-  padding-top: 14px;
-}
-
-.permit-footer button {
-  width: 100%;
-  min-height: 30px;
-  border: 1px solid rgba(110, 212, 134, 0.45);
-  background: rgba(110, 212, 134, 0.12);
-  color: var(--green);
+  text-align: left;
   text-transform: uppercase;
-  font-size: 9px;
+  font-size: 11px;
+}
+
+.permit-auth {
+  display: grid;
+  grid-template-columns: 1fr 56px;
+  gap: 12px;
+  align-items: end;
+  padding-bottom: 12px;
+  padding-top: 4px;
+}
+
+.permit-auth strong {
+  display: block;
+  margin-bottom: 5px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(216, 221, 224, 0.38);
+  color: #f0eadf;
+  font-family: "Snell Roundhand", "Brush Script MT", cursive;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.permit-auth span {
+  color: #c8c1b6;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.permit-qr {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border: 5px solid #d8dde0;
+  background:
+    linear-gradient(90deg, #111 50%, transparent 0) 0 0 / 8px 8px,
+    linear-gradient(#111 50%, transparent 0) 0 0 / 8px 8px,
+    #d8dde0;
+  box-shadow: inset 0 0 0 3px #111;
+}
+
+.permit-qr::after {
+  content: "VERIFY ONCHAIN";
+  position: absolute;
+  top: 59px;
+  left: 50%;
+  width: 78px;
+  transform: translateX(-50%);
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 6px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+.permit-legal {
+  margin: 0;
+  padding-top: 11px;
+  border-top: 1px solid rgba(216, 221, 224, 0.38);
+  line-height: 1.45;
+}
+
+.permit-motto {
+  margin: 0;
+  padding-top: 10px;
+  border-top: 1px solid rgba(216, 221, 224, 0.5);
+  color: var(--reserve-gold);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  line-height: 1.25;
+}
+
+.permit-spine {
+  position: absolute;
+  inset: 0 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  border-left: 1px solid rgba(255, 255, 255, 0.36);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16), rgba(216, 221, 224, 0.62) 46%, rgba(255, 255, 255, 0.18)),
+    #8e9089;
+  color: #0b0d0c;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: 900;
   letter-spacing: 0.16em;
 }
