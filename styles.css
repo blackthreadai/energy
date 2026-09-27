@@ -682,7 +682,8 @@ dd {
 }
 
 .right-rail {
-  height: auto;
+  height: 689px;
+  grid-template-rows: auto 1fr;
 }
 
 .right-rail .panel {
@@ -1055,6 +1056,7 @@ tr.selected {
 }
 
 .activity {
+  height: 100%;
   min-height: 0;
   padding: 12px;
   overflow: hidden;
