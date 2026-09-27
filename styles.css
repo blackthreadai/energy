@@ -679,13 +679,16 @@ dd {
 .right-rail {
   grid-column: 4;
   grid-row: 1;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 8px;
   height: 100%;
   min-height: 0;
   overflow: hidden;
 }
 
 .right-rail .panel {
-  padding: 12px;
+  padding: 10px;
 }
 
 .right-rail button,
@@ -712,7 +715,7 @@ dd {
 
 .dex-widget {
   display: grid;
-  gap: 10px;
+  gap: 6px;
 }
 
 .dex-widget .panel-head {
@@ -736,7 +739,7 @@ dd {
 }
 
 .dex-tabs button {
-  min-height: 27px;
+  min-height: 23px;
   margin: 0;
   border: 0;
   border-right: 1px solid rgba(216, 221, 224, 0.12);
@@ -755,8 +758,8 @@ dd {
 .swap-box {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 5px 12px;
-  padding: 10px;
+  gap: 4px 12px;
+  padding: 7px 9px;
   border: 1px solid rgba(216, 221, 224, 0.14);
   background: rgba(255, 255, 255, 0.025);
 }
@@ -773,7 +776,7 @@ dd {
   grid-column: 1;
   color: #fff;
   font-family: "Arial Narrow", "Avenir Next Condensed", Arial, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1;
   letter-spacing: 0.03em;
 }
@@ -797,9 +800,9 @@ dd {
 .swap-arrow {
   display: grid;
   place-items: center;
-  width: 22px;
-  height: 22px;
-  margin: -4px auto;
+  width: 18px;
+  height: 18px;
+  margin: -2px auto;
   border: 1px solid rgba(255, 212, 123, 0.4);
   background: rgba(255, 212, 123, 0.08);
   color: var(--reserve-gold);
@@ -816,23 +819,23 @@ dd {
 }
 
 .dex-meta div {
-  padding: 8px;
+  padding: 5px 7px;
   border-right: 1px solid rgba(216, 221, 224, 0.12);
   border-bottom: 1px solid rgba(216, 221, 224, 0.12);
 }
 
 .dex-meta dt {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   font-size: 7px;
 }
 
 .dex-meta dd {
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 0.02em;
 }
 
 .swap-button {
-  min-height: 34px !important;
+  min-height: 28px !important;
   margin-top: 0 !important;
   border-color: rgba(255, 212, 123, 0.58) !important;
   background: rgba(255, 212, 123, 0.12) !important;
@@ -1060,17 +1063,15 @@ tr.selected {
 }
 
 .activity {
-  grid-column: 4;
-  grid-row: 2;
-  height: 195px;
+  min-height: 0;
   padding: 12px;
   overflow: hidden;
 }
 
 .activity ul {
   display: grid;
-  gap: 6px;
-  margin: 12px 0 0;
+  gap: 4px;
+  margin: 8px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -1079,14 +1080,14 @@ tr.selected {
   position: relative;
   display: grid;
   grid-template-columns: 34px 1fr;
-  gap: 8px;
-  min-height: 24px;
+  gap: 7px;
+  min-height: 20px;
   align-items: center;
   padding: 0 8px 0 10px;
   border-left: 3px solid rgba(216, 221, 224, 0.36);
   background: rgba(216, 221, 224, 0.045);
   color: #b7bcb8;
-  font-size: 9px;
+  font-size: 8px;
 }
 
 .activity li:nth-child(even) {
