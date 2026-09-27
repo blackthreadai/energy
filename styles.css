@@ -265,11 +265,13 @@ a {
 }
 
 .ticker-grid em {
-  margin-left: 6px;
+  margin-left: 8px;
   color: var(--green);
-  font-size: 10px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
   font-style: normal;
   font-weight: 900;
+  letter-spacing: 0.09em;
 }
 
 .ticker-grid small {
