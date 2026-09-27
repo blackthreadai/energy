@@ -707,6 +707,135 @@ dd {
   color: #ffffff;
 }
 
+.dex-widget {
+  display: grid;
+  gap: 10px;
+}
+
+.dex-widget .panel-head {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dex-widget .panel-head span {
+  color: var(--reserve-gold);
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.dex-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid rgba(216, 221, 224, 0.14);
+}
+
+.dex-tabs button {
+  min-height: 27px;
+  margin: 0;
+  border: 0;
+  border-right: 1px solid rgba(216, 221, 224, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.dex-tabs button:last-child {
+  border-right: 0;
+}
+
+.dex-tabs button.active {
+  background: rgba(255, 212, 123, 0.12);
+  color: var(--reserve-gold);
+}
+
+.swap-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px 12px;
+  padding: 10px;
+  border: 1px solid rgba(216, 221, 224, 0.14);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.swap-box span {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.swap-box strong {
+  grid-column: 1;
+  color: #fff;
+  font-family: "Arial Narrow", "Avenir Next Condensed", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.swap-box em {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: end;
+  color: var(--reserve-gold);
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.swap-box.receive strong {
+  color: var(--green);
+}
+
+.swap-arrow {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin: -4px auto;
+  border: 1px solid rgba(255, 212, 123, 0.4);
+  background: rgba(255, 212, 123, 0.08);
+  color: var(--reserve-gold);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.dex-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  border-top: 1px solid rgba(216, 221, 224, 0.12);
+  border-left: 1px solid rgba(216, 221, 224, 0.12);
+}
+
+.dex-meta div {
+  padding: 8px;
+  border-right: 1px solid rgba(216, 221, 224, 0.12);
+  border-bottom: 1px solid rgba(216, 221, 224, 0.12);
+}
+
+.dex-meta dt {
+  margin-bottom: 4px;
+  font-size: 7px;
+}
+
+.dex-meta dd {
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.swap-button {
+  min-height: 34px !important;
+  margin-top: 0 !important;
+  border-color: rgba(255, 212, 123, 0.58) !important;
+  background: rgba(255, 212, 123, 0.12) !important;
+  color: var(--reserve-gold) !important;
+}
+
 .timeline ol {
   position: relative;
   margin: 12px 0 0;

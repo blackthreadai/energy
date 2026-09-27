@@ -148,13 +148,33 @@
           </section>
 
           <aside class="right-rail">
-            <section class="panel">
-              <h2>Actions</h2>
-              <button>View on Map</button>
-              <button>Manage Refinery Allocation</button>
-              <button>View Production History</button>
-              <button>Transfer Asset</button>
-              <button>List for Sale</button>
+            <section class="panel dex-widget">
+              <div class="panel-head">
+                <h2>Trade Fuel</h2>
+                <span>DEX</span>
+              </div>
+              <div class="dex-tabs" aria-label="Fuel trade side">
+                <button class="active">Buy</button>
+                <button>Sell</button>
+              </div>
+              <div class="swap-box">
+                <span>You Pay</span>
+                <strong>1,000</strong>
+                <em>USDC</em>
+              </div>
+              <div class="swap-arrow" aria-hidden="true">↓</div>
+              <div class="swap-box receive">
+                <span>You Receive</span>
+                <strong>1,274.91</strong>
+                <em>FUEL</em>
+              </div>
+              <dl class="dex-meta">
+                <div><dt>Rate</dt><dd>1 FUEL = $0.7842</dd></div>
+                <div><dt>Slippage</dt><dd>0.5%</dd></div>
+                <div><dt>Route</dt><dd>USDC → FUEL</dd></div>
+                <div><dt>Liquidity</dt><dd>$18.72M</dd></div>
+              </dl>
+              <button class="swap-button">Execute Swap</button>
             </section>
 
             <section class="panel timeline">
