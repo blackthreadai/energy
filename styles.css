@@ -309,7 +309,7 @@ a {
 .content-grid {
   display: grid;
   grid-template-columns: 245px minmax(380px, 1.2fr) minmax(300px, 0.85fr) 300px;
-  grid-template-rows: auto 195px auto;
+  grid-template-rows: 486px 195px auto;
   gap: 8px;
   padding: 14px;
 }
@@ -336,7 +336,8 @@ a {
   grid-row: 1;
   display: grid;
   grid-template-rows: auto 1fr auto auto;
-  min-height: 415px;
+  height: 100%;
+  min-height: 0;
   padding: 14px;
   overflow: hidden;
 }
@@ -437,6 +438,8 @@ a {
 .asset-card {
   grid-column: 2 / 4;
   grid-row: 1;
+  height: 100%;
+  overflow: hidden;
 }
 
 .asset-head {
@@ -514,12 +517,12 @@ h1 {
 .asset-body {
   display: grid;
   grid-template-columns: minmax(300px, 1fr) minmax(280px, 0.86fr);
-  min-height: 310px;
+  min-height: 0;
 }
 
 .trade-body {
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(282px, 1fr) auto;
+  grid-template-rows: minmax(0, 1fr) auto;
 }
 
 .rig-photo {
@@ -679,6 +682,9 @@ dd {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 8px;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .right-rail .panel {
