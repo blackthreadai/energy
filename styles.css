@@ -662,7 +662,7 @@ dd {
   display: grid;
   grid-column: 1;
   grid-row: 2;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: 1.1fr 0.9fr;
   height: 195px;
   padding: 0;
   overflow: hidden;
