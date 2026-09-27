@@ -404,14 +404,6 @@ a {
   filter: saturate(0.82) contrast(1.12) brightness(0.78);
 }
 
-.permit-photo::after {
-  content: "";
-  position: absolute;
-  inset: 14px;
-  border: 1px solid rgba(216, 221, 224, 0.16);
-  pointer-events: none;
-}
-
 .permit-specs {
   margin: 0;
 }
