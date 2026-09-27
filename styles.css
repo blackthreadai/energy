@@ -390,41 +390,26 @@ a {
 
 .permit-seal {
   position: relative;
-  display: grid;
-  place-items: center;
   min-height: 116px;
   margin: 12px 0;
   border: 1px solid rgba(216, 221, 224, 0.14);
-  background:
-    linear-gradient(135deg, rgba(216, 221, 224, 0.08), transparent 45%),
-    radial-gradient(circle at 50% 50%, rgba(110, 212, 134, 0.16), transparent 52%),
-    rgba(255, 255, 255, 0.02);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
 }
 
-.permit-seal::before,
-.permit-seal::after {
+.permit-photo {
+  background:
+    linear-gradient(180deg, rgba(5, 8, 8, 0.05), rgba(5, 8, 8, 0.28)),
+    url("./assets/permit-landscape.jpg") center / cover no-repeat;
+  filter: saturate(0.82) contrast(1.12) brightness(0.78);
+}
+
+.permit-photo::after {
   content: "";
   position: absolute;
+  inset: 14px;
   border: 1px solid rgba(216, 221, 224, 0.16);
-}
-
-.permit-seal::before {
-  inset: 22px;
-}
-
-.permit-seal::after {
-  width: 58px;
-  height: 58px;
-  transform: rotate(45deg);
-}
-
-.permit-seal span {
-  z-index: 1;
-  color: #ffffff;
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 1;
-  text-shadow: 0 0 24px rgba(110, 212, 134, 0.46);
+  pointer-events: none;
 }
 
 .permit-specs {
