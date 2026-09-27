@@ -369,9 +369,9 @@ a {
   width: fit-content;
   min-height: 23px;
   padding: 5px 10px 0;
-  border: 1px solid rgba(110, 212, 134, 0.45);
-  background: rgba(110, 212, 134, 0.12);
-  color: var(--green);
+  border: 1px solid rgba(255, 212, 123, 0.48);
+  background: rgba(255, 212, 123, 0.12);
+  color: var(--reserve-gold);
   text-transform: uppercase;
   font-size: 9px;
   font-style: normal;
