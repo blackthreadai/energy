@@ -723,6 +723,10 @@ dd {
   border: 0;
 }
 
+.dex-widget h2 {
+  color: var(--reserve-gold);
+}
+
 .dex-widget .panel-head span {
   color: var(--reserve-gold);
   text-transform: uppercase;
@@ -750,8 +754,8 @@ dd {
 }
 
 .dex-tabs button.active {
-  background: rgba(255, 212, 123, 0.12);
-  color: var(--reserve-gold);
+  background: rgba(110, 212, 134, 0.14);
+  color: var(--green);
 }
 
 .swap-box {
@@ -796,19 +800,6 @@ dd {
   color: var(--green);
 }
 
-.swap-arrow {
-  display: grid;
-  place-items: center;
-  width: 18px;
-  height: 18px;
-  margin: -2px auto;
-  border: 1px solid rgba(255, 212, 123, 0.4);
-  background: rgba(255, 212, 123, 0.08);
-  color: var(--reserve-gold);
-  font-size: 13px;
-  font-weight: 900;
-}
-
 .dex-meta {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -836,9 +827,9 @@ dd {
 .swap-button {
   min-height: 28px !important;
   margin-top: 0 !important;
-  border-color: rgba(255, 212, 123, 0.58) !important;
-  background: rgba(255, 212, 123, 0.12) !important;
-  color: var(--reserve-gold) !important;
+  border-color: rgba(110, 212, 134, 0.58) !important;
+  background: rgba(110, 212, 134, 0.14) !important;
+  color: var(--green) !important;
 }
 
 .timeline ol {
