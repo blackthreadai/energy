@@ -1073,16 +1073,6 @@ dd {
   list-style: none;
 }
 
-.activity-feed::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  bottom: 5px;
-  left: 4px;
-  width: 1px;
-  background: linear-gradient(180deg, var(--green), rgba(110, 212, 134, 0.18));
-}
-
 .activity-feed li {
   position: relative;
   display: grid;
@@ -1090,9 +1080,13 @@ dd {
   gap: 8px;
   align-items: start;
   min-height: 33px;
-  padding-left: 14px;
+  padding: 4px 7px;
   color: #b7bcb8;
   font-size: 10px;
+}
+
+.activity-feed li:nth-child(even) {
+  background: rgba(110, 212, 134, 0.1);
 }
 
 .activity-feed time {
