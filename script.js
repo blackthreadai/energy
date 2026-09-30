@@ -71,7 +71,7 @@ function drawProductionChart() {
     ctx.fillText(label, 0, padT + 4 + (chartH / 3) * i);
   });
 
-  ctx.fillStyle = "#ffd47b";
+  ctx.fillStyle = "#7f8783";
   ctx.font = "900 9px Arial";
   ctx.fillText("$FUEL OUTPUT PER DAY", pad, height - 7);
 }
