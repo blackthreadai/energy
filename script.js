@@ -19,10 +19,6 @@ function drawProductionChart() {
 
   ctx.clearRect(0, 0, width, height);
 
-  ctx.fillStyle = "#ffd47b";
-  ctx.font = "900 9px Arial";
-  ctx.fillText("$FUEL PER DAY OUTPUT", pad, 10);
-
   ctx.strokeStyle = "rgba(216, 221, 224, 0.11)";
   ctx.lineWidth = 1;
 
@@ -74,9 +70,10 @@ function drawProductionChart() {
   ["1200", "800", "400", "0"].forEach((label, i) => {
     ctx.fillText(label, 0, padT + 4 + (chartH / 3) * i);
   });
-  ["Feb 2026", "Jun 2026", "Oct 2026", "Feb 2027"].forEach((label, i) => {
-    ctx.fillText(label, pad + (chartW / 3) * i - 10, height - 7);
-  });
+
+  ctx.fillStyle = "#ffd47b";
+  ctx.font = "900 9px Arial";
+  ctx.fillText("$FUEL OUTPUT PER DAY", pad, height - 7);
 }
 
 drawProductionChart();
