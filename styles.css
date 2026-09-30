@@ -1002,8 +1002,14 @@ dd {
   font-weight: 900;
 }
 
+.map-info p {
+  margin: 3px 0 0;
+  color: #aaa39a;
+  font-size: 11px;
+}
+
 .map-info button {
-  margin-top: 28px;
+  margin-top: 24px;
   border-color: rgba(255, 212, 123, 0.58);
   background: rgba(255, 212, 123, 0.12);
   color: var(--reserve-gold);
