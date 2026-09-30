@@ -714,7 +714,7 @@ dd {
 
 .dex-widget {
   display: grid;
-  gap: 6px;
+  gap: 10px;
 }
 
 .dex-widget .panel-head {
@@ -742,7 +742,7 @@ dd {
 }
 
 .dex-tabs button {
-  min-height: 23px;
+  min-height: 26px;
   margin: 0;
   border: 0;
   border-right: 1px solid rgba(216, 221, 224, 0.12);
@@ -761,8 +761,8 @@ dd {
 .swap-box {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 4px 12px;
-  padding: 7px 9px;
+  gap: 6px 12px;
+  padding: 11px 10px;
   border: 1px solid rgba(216, 221, 224, 0.14);
   background: rgba(255, 255, 255, 0.025);
 }
@@ -809,13 +809,13 @@ dd {
 }
 
 .dex-meta div {
-  padding: 5px 7px;
+  padding: 8px 9px;
   border-right: 1px solid rgba(216, 221, 224, 0.12);
   border-bottom: 1px solid rgba(216, 221, 224, 0.12);
 }
 
 .dex-meta dt {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   font-size: 7px;
 }
 
@@ -825,7 +825,7 @@ dd {
 }
 
 .swap-button {
-  min-height: 28px !important;
+  min-height: 32px !important;
   margin-top: 0 !important;
   border-color: rgba(110, 212, 134, 0.58) !important;
   background: rgba(110, 212, 134, 0.14) !important;
